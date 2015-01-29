@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Global Interiors</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/gi.css" media="screen" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </head>
+    <body class="gi_bg">
+        <div class="page-container">
+            <div class="row">
+                <div class="col-xs-12"></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="nav nav-pills nav-bg-color">
+                        <div class="col-xs-2">
+                            <a class="navbar-brand" href="#">
+                                <img class="logo_pos" alt="Global Interiors" src="{% static "images/gi_logo_cropped.jpg"%}">
+                            </a><span class="logo_name"> <b><i>Global Interiors</i></b> </span>
+                        </div>
+                        <li role="presentation" class="active"><a class="tab_name1" href="#">HOME</a></li>
+                        <li role="presentation" ><a class="tab_name" href="#">ABOUT US</a></li>
+                        <li role="presentation" ><a class="tab_name" href="#">SERVICES</a></li>
+                        <li role="presentation" ><a class="tab_name" href="#">CLIENTS</a></li>
+                        <li role="presentation" ><a class="tab_name" href="#">CONTACT US</a></li>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </body>
+</html>
+
+

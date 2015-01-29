@@ -1,0 +1,38 @@
+.nav-bg-color {
+    background-color: buttonhighlight;
+}
+
+.logo_pos {
+    height:180%;
+    padding-left:20%;
+}
+
+.logo_name {
+    margin-left: -50px;
+    margin-top: 20px;
+    position: absolute;
+    color:cornflowerblue;
+    font-size: 20px;
+    font-family: Times New Roman;
+}
+
+.tab_name1 {
+    margin-left: 250px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.try {
+    background: threeddarkshadow;
+    color: orange;
+}
+
+.tab_name {
+    margin-left: 50px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+.gi_bg {
+    background-image: url('/static/images/gi_bg4.jpg')
+}
