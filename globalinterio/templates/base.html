@@ -15,7 +15,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     </head>
     <body class="gi_bg">
-        <div class="page-container">
+        <div class="row-fluid">
             <div class="row">
                 <div class="col-xs-12"></div>
             </div>
@@ -27,18 +27,14 @@
                                 <img class="logo_pos" alt="Global Interiors" src="{% static "images/gi_logo_cropped.jpg"%}">
                             </a><span class="logo_name"> <b><i>Global Interiors</i></b> </span>
                         </div>
-                        <li role="presentation" class="active"><a class="tab_name1" href="#">HOME</a></li>
-                        <li role="presentation" ><a class="tab_name" href="#">ABOUT US</a></li>
-                        <li role="presentation" ><a class="tab_name" href="#">SERVICES</a></li>
-                        <li role="presentation" ><a class="tab_name" href="#">CLIENTS</a></li>
-                        <li role="presentation" ><a class="tab_name" href="#">CONTACT US</a></li>
+                        <li role="presentation" class="{{selected}}"><a class="tab_name1" href="/home">HOME</a></li>
+                        <li role="presentation" class="{{about}}"><a class="tab_name" href="/aboutus">ABOUT US</a></li>
+                        <li role="presentation" class="{{services}}"><a class="tab_name" href="/services">SERVICES</a></li>
+                        <li role="presentation" class="{{clients}}"><a class="tab_name" href="/clients">CLIENTS</a></li>
+                        <li role="presentation" class="{{contact}}"><a class="tab_name" href="/contactus">CONTACT US</a></li>
                     </div>
                 </div>
-            </div>
-            <div class="row">
             </div>
         </div>
     </body>
 </html>
-
-

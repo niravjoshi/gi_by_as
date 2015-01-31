@@ -36,3 +36,36 @@
 .gi_bg {
     background-image: url('/static/images/gi_bg4.jpg')
 }
+
+.msgs {
+    text-align:center;
+    color: red;
+}
+
+.img_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont {
+    font-family: New Times Roman;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.cont_title {
+    color: maroon;
+    font-family: New Times Roman;
+    font-style: italic;
+}
+
+.footer {
+    position: fixed;
+    margin-top: 18%;
+}
+
+.foot_text {
+    float: right;
+    margin-right:8%;
+}
