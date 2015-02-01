@@ -15,26 +15,21 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     </head>
     <body class="gi_bg">
-        <div class="row-fluid">
-            <div class="row">
-                <div class="col-xs-12"></div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="nav nav-pills nav-bg-color">
-                        <div class="col-xs-2">
-                            <a class="navbar-brand" href="#">
-                                <img class="logo_pos" alt="Global Interiors" src="{% static "images/gi_logo_cropped.jpg"%}">
-                            </a><span class="logo_name"> <b><i>Global Interiors</i></b> </span>
-                        </div>
-                        <li role="presentation" class="{{selected}}"><a class="tab_name1" href="/home">HOME</a></li>
-                        <li role="presentation" class="{{about}}"><a class="tab_name" href="/aboutus">ABOUT US</a></li>
-                        <li role="presentation" class="{{services}}"><a class="tab_name" href="/services">SERVICES</a></li>
-                        <li role="presentation" class="{{clients}}"><a class="tab_name" href="/clients">CLIENTS</a></li>
-                        <li role="presentation" class="{{contact}}"><a class="tab_name" href="/contactus">CONTACT US</a></li>
-                    </div>
+    <div class="container">
+        <div class="col-xs-12">
+            <div class="nav nav-pills nav-bg-color">
+                <div class="col-xs-2">
+                    <a class="navbar-brand" href="#">
+                        <img class="logo_pos" alt="Global Interiors" src="{% static "images/gi_logo_cropped.jpg"%}">
+                    </a><span class="logo_name"> <b><i>Global Interiors</i></b> </span>
                 </div>
+                <li role="presentation" class="{{selected}}"><a class="tab_name1" href="/home">HOME</a></li>
+                <li role="presentation" class="{{about}}"><a class="tab_name" href="/aboutus">ABOUT US</a></li>
+                <li role="presentation" class="{{services}}"><a class="tab_name" href="/services">SERVICES</a></li>
+                <li role="presentation" class="{{clients}}"><a class="tab_name" href="/clients">CLIENTS</a></li>
+                <li role="presentation" class="{{contact}}"><a class="tab_name" href="/contactus">CONTACT US</a></li>
             </div>
         </div>
+    </div>
     </body>
 </html>

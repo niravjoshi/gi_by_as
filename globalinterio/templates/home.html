@@ -1,6 +1,8 @@
 {% include "base.html" %}
 {% load staticfiles %}
-<div class="row" style="padding-top:15%">
+<div class="row home_empty_div">
+</div>
+<div class="row home_slide">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -48,13 +50,19 @@
         </a>
     </div>
 </div>
-{% include "footer.html"%}
+<div class="row">
+    <div class="col-xs-12">
+    </div>
+</div>
+<div class="panel panel-warning col-xs-12 footer_home">
+    <div class="panel-footer foot_text"> &copy; 2015 Global Interiors</div>
+</div>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>
 $('.carousel').carousel({
-interval: 1000
+interval: 3000
 })
 </script>
