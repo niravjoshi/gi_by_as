@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 {% load staticfiles %}
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Global Interiors</title>
-        <link rel="stylesheet" type="text/css" href="/static/css/gi.css" media="screen" />
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    </head>
-    <body class="gi_bg">
-    <div class="container">
-        <div class="col-xs-12">
-            <div class="nav nav-pills nav-bg-color">
-                <div class="col-xs-2">
-                    <a class="navbar-brand" href="#">
-                        <img class="logo_pos" alt="Global Interiors" src="{% static "images/gi_logo_cropped.jpg"%}">
-                    </a><span class="logo_name"> <b><i>Global Interiors</i></b> </span>
-                </div>
-                <li role="presentation" class="{{selected}}"><a class="tab_name1" href="/home">HOME</a></li>
-                <li role="presentation" class="{{about}}"><a class="tab_name" href="/aboutus">ABOUT US</a></li>
-                <li role="presentation" class="{{services}}"><a class="tab_name" href="/services">SERVICES</a></li>
-                <li role="presentation" class="{{clients}}"><a class="tab_name" href="/clients">CLIENTS</a></li>
-                <li role="presentation" class="{{contact}}"><a class="tab_name" href="/contactus">CONTACT US</a></li>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Global Interiors</title>
+<link rel="stylesheet" type="text/css" href="/static/css/gi.css" media="screen" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+<div class="container ">
+    {% block "navbar" %}
+    <div class="col-md-12 nav nav-pills nav-bg-color">
+        <div class="nav nav-pills nav-bg-color">
+            <div class="col-md-2">
+                <a class="navbar-brand" href="/home">
+                    <img class="logo_pos" alt="Global Interiors" src="{% static "images/gi_logo_cropped.jpg"%}">
+                </a>
+            </div>
+            <div class="col-md-2 center">
+                <li role="presentation" class="{{selected}}"><a href="/home">HOME</a></li>
+            </div>
+            <div class="col-md-2 center">
+                <li role="presentation" class="{{about}}"><a href="/aboutus">ABOUT US</a></li>
+            </div>
+            <div class="col-md-2 center">
+                <li role="presentation" class="{{services}}"><a href="/services">SERVICES</a></li>
+            </div>
+            <div class="col-md-2 center">
+                <li role="presentation" class="{{clients}}"><a href="/clients">CLIENTS</a></li>
+            </div>
+            <div class="col-md-2 center">
+                <li role="presentation" class="{{contact}}"><a href="/contactus">CONTACT US</a></li>
             </div>
         </div>
     </div>
-    </body>
+    {% endblock %}
+    <div class="row">
+        <div class="col-md-12 center-height">
+            {% block "centerbody" %}
+            {% endblock %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            {% block "footer" %}
+            <div class="footer-bgc">
+                <hr class="footer-line" >
+                <span class="foot_text"> &copy; 2015 Global Interiors</span>
+            </div>
+            {% endblock %}
+        </div>
+    </div>
+</div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$('.carousel').carousel({
+interval: 3000
+})
+</script>
+
+</body>
 </html>

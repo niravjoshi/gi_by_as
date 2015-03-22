@@ -1,40 +1,27 @@
+.gi_bg {
+    background-image: url('/static/images/gi_bg4.jpg');
+}
 .nav-bg-color {
-    background-color: buttonhighlight;
+    /*background-color: buttonhighlight;*/
+    width: 900px;
+    margin: auto;
 }
-
 .logo_pos {
-    height:180%;
-    padding-left:20%;
+    height:250%;
+    margin-top:-15px;
+}
+.center {
+    text-align: center;
+    margin-top: 15px;
 }
 
-.logo_name {
-    margin-left: -50px;
-    margin-top: 20px;
-    position: fixed;
-    color:cornflowerblue;
-    font-size: 20px;
-    font-family: Times New Roman;
-}
-
-.tab_name1 {
-    margin-left: 250px;
-    margin-top: 10px;
-    position: absolute;
+.center-height {
+    height: 500px;
 }
 
 .try {
     background: threeddarkshadow;
     color: orange;
-}
-
-.tab_name {
-    margin-left: 30px;
-    margin-top: 10px;
-    position: absolute;
-}
-
-.gi_bg {
-    background-image: url('/static/images/gi_bg4.jpg')
 }
 
 .msgs {
@@ -60,16 +47,15 @@
     font-style: italic;
 }
 
-.home_slide {
-    position: fixed;
-    margin: auto;
-    width: 100%;
-}
-
 .home_empty_div {
     margin-top:12%;
 }
 
+.pos {
+    width: 900px;
+    margin: auto;
+    margin-top:25px;
+}
 .footer_home {
     position: fixed;
     bottom: 0px;
@@ -89,5 +75,13 @@
 }
 .foot_text {
     float: right;
-    margin-right:8%;
 }
+.footer-bgc{
+    width: 900px;
+    margin: auto;
+}
+.footer-line {
+    background-color: Threedshadow;
+    height: 2px;
+}
+
