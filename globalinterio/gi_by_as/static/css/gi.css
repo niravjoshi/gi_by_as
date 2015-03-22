@@ -10,6 +10,10 @@
     height:250%;
     margin-top:-15px;
 }
+.color {
+    color:yellowgreen;
+    font-family: Times New Roman;
+}
 .center {
     text-align: center;
     margin-top: 15px;

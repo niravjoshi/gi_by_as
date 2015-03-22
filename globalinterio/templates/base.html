@@ -14,33 +14,31 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
-<body>
+<body class="gi_bg">
 <div class="container ">
     {% block "navbar" %}
-    <div class="col-md-12 nav nav-pills nav-bg-color">
-        <div class="nav nav-pills nav-bg-color">
-            <div class="col-md-2">
-                <a class="navbar-brand" href="/home">
-                    <img class="logo_pos" alt="Global Interiors" src="{% static "images/gi_logo_cropped.jpg"%}">
-                </a>
+        <div class="col-md-2">
+            <a class="navbar-brand" href="/home">
+                <img class="logo_pos" alt="Global Interiors" src="{% static "images/gi_logo_cropped.jpg"%}">
+            </a>
+        </div>
+        <div class="nav navbar-inverse nav-bg-color">
+            <div class="col-md-2 center">
+                <li role="presentation" class="{{selected}}"><a class="color" href="/home">HOME</a></li>
             </div>
             <div class="col-md-2 center">
-                <li role="presentation" class="{{selected}}"><a href="/home">HOME</a></li>
+                <li role="presentation" class="{{about}}"><a class="color" href="/aboutus">ABOUT US</a></li>
             </div>
             <div class="col-md-2 center">
-                <li role="presentation" class="{{about}}"><a href="/aboutus">ABOUT US</a></li>
+                <li role="presentation" class="{{services}}"><a class="color" href="/services">SERVICES</a></li>
             </div>
             <div class="col-md-2 center">
-                <li role="presentation" class="{{services}}"><a href="/services">SERVICES</a></li>
+                <li role="presentation" class="{{clients}}"><a class="color" href="/clients">CLIENTS</a></li>
             </div>
             <div class="col-md-2 center">
-                <li role="presentation" class="{{clients}}"><a href="/clients">CLIENTS</a></li>
-            </div>
-            <div class="col-md-2 center">
-                <li role="presentation" class="{{contact}}"><a href="/contactus">CONTACT US</a></li>
+                <li role="presentation" class="{{contact}}"><a class="color" href="/contactus">CONTACT US</a></li>
             </div>
         </div>
-    </div>
     {% endblock %}
     <div class="row">
         <div class="col-md-12 center-height">
