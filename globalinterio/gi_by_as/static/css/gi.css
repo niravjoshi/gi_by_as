@@ -60,32 +60,7 @@
     margin: auto;
     margin-top:25px;
 }
-.footer_home {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    margin-top: 24%;
-}
 
-.footer_contact {
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    margin-top: 16%;
-}
 .foot_text {
-    float: right;
+    margin-right: 225px !important;
 }
-.footer-bgc{
-    width: 900px;
-    margin: auto;
-}
-.footer-line {
-    background-color: Threedshadow;
-    height: 2px;
-}
-
