@@ -64,3 +64,11 @@
 .foot_text {
     margin-right: 225px !important;
 }
+.drop-cursor {
+    cursor: pointer;
+}
+.img-pos {
+    width: 150px;
+    height: 130px;
+    overflow: hidden;
+}

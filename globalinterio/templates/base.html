@@ -13,6 +13,10 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Image Viewer -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<link rel="stylesheet" href="/static/js/bootstrap-image-gallery.min.css">
 </head>
 <body class="gi_bg">
 <div class="container ">
@@ -30,7 +34,12 @@
                 <li role="presentation" class="{{about}}"><a class="color" href="/aboutus">ABOUT US</a></li>
             </div>
             <div class="col-md-2 center">
-                <li role="presentation" class="{{services}}"><a class="color" href="/services">SERVICES</a></li>
+                <li class="{{services}} dropdown drop-cursor"><a class="color dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">SERVICES</a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="/services" class="center">Residential Projects</a></li>
+                    <li><a href="/services" class="center">Commercial Projects</a></li>
+                </ul>
+                </li>
             </div>
             <div class="col-md-2 center">
                 <li role="presentation" class="{{clients}}"><a class="color" href="/clients">CLIENTS</a></li>
@@ -66,6 +75,8 @@ $('.carousel').carousel({
 interval: 3000
 })
 </script>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+<script src="js/bootstrap-image-gallery.min.js"></script>
 </body>
 </html>
