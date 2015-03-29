@@ -1,5 +1,5 @@
 .gi_bg {
-    background-image: url('/static/images/gi_bg4.jpg');
+    background-image: url('/static/images/gi_white_background.jpg');
 }
 .nav-bg-color {
     /*background-color: buttonhighlight;*/
@@ -74,4 +74,32 @@
 }
 .font {
     font-family: New Times Roman;
+}
+
+.div-top {
+    margin-top: 10px;
+}
+
+.img-size {
+    width: 180px;
+    height: 150px;
+}
+
+.home_inner {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 85px;
+    z-index: 2000;
+}
+.home {
+    background: none repeat scroll 0 0 #eee;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    vertical-align: middle;
+    width: 100%;
+    z-index: 1000;
 }
