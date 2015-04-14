@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block "centerbody" %}
+{% comment %}
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery">
     <!-- The container for the modal slides -->
@@ -136,4 +137,47 @@
         </div>
     </div>
 </div>
+{% endcomment %}
+<div class="panel panel-warning pos">
+    <div class="panel-heading"><b>THE SERVICES WE OFFER</b></div>
+    <div class="panel-body">
+        <div class="panel panel-default">
+            <div class="panel-heading"><b>LAYOUT PLANS</b></div>
+            <div class="panel-body">
+                <p>We design the layout plans from scratch to set the foundation right. It includes</p>
+                <p class="cont "><span class="color glyphicon glyphicon-ok"></span> Interior Layout </p>
+                <p class="cont "><span class="color glyphicon glyphicon-ok"></span> False Ceiling </p>
+                <p class="cont "><span class="color glyphicon glyphicon-ok"></span> Electrical Layout </p>
+                <p class="cont "><span class="color glyphicon glyphicon-ok"></span> Flooring Layout </p>
+                <p class="cont "><span class="color glyphicon glyphicon-ok"></span> Plumbing Layout </p>
+                <p class="cont "><span class="color glyphicon glyphicon-ok"></span> Security Layout (Automation) </p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading"><b>FURNITURE</b></div>
+            <div class="panel-body">
+                <p>We conceptualize your furniture design based on schematic themes, giving the space unique furnishing that matches the overall style. It ensures that the furniture is in sync with the designing and makes a style statement too.</p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading"><b>CIVIL CHANGES</b></div>
+            <div class="panel-body">
+                <P>We undertake re-designing the civil changes wherever required to make the civil planning compatible with the building design, keeping in mind the convenience of usage.</p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading"><b>LANDSCAPE DESIGNING</b></div>
+            <div class="panel-body">
+                <p>We provide sustainable landscape designing that suit your needs and at the same time provide utility and elegance. We take up landscape designing exclusively for bigger projects that we work on</p>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading"><b>VASTU CONSULTANCY</b></div>
+            <div class="panel-body">
+                <p>Vaastu shastra elaborates the basic sense of designing the architecture of buildings and specific areas of a building such as rooms, fenestrations, gates etc. The motive of vastu shastra is to enhance the well being of the occupants . It primarily instructs how to maintain the best equilibrium of the five elements ( Earth Water, Sun, Air & Space) in a building and to make best use of their effects to energize the metal & physical energies of inhabitants.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
