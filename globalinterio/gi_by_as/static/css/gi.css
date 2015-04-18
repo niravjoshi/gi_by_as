@@ -103,3 +103,23 @@
     width: 100%;
     z-index: 1000;
 }
+.hline {
+    background-image: url('/static/images/line.jpg') ;
+    text-align: center;
+}
+
+.welcome-height {
+    height:275px;
+}
+
+.hline span {
+    background: none repeat scroll 0 0 #fff;
+    color:black;
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 14px 15px;
+}
+.img {
+    background-image: url('/static/images/footer-image.jpg') ;
+    height: 100%;
+}
