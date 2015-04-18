@@ -112,6 +112,11 @@
     height:275px;
 }
 
+.welcome-height hr{
+    border-color:sienna;
+
+}
+
 .hline span {
     background: none repeat scroll 0 0 #fff;
     color:black;
